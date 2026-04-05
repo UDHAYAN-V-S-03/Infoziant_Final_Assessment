@@ -1,4 +1,4 @@
-** 🔍 Disk Forensics - Recovering Deleted Files from a Disk Image**
+# 🔍 Disk Forensics - Recovering Deleted Files from a Disk Image
 
 ### 📌 Project Overview
 This project is aimed at conducting disk forensics with the purpose of restoring
