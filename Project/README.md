@@ -1,6 +1,6 @@
-**Disk Forensics - Recovering Deleted Files from a Disk Image**
+** 🔍 Disk Forensics - Recovering Deleted Files from a Disk Image**
 
-### Project Overview
+### 📌 Project Overview
 This project is aimed at conducting disk forensics with the purpose of restoring
 deleted files on a disk image. A virtual machine (VMware) was used to create a
 controlled environment and run Windows 10, in which sample files like images were
@@ -11,7 +11,7 @@ disk image was done with Autopsy to restore deleted files. The project shows how
 deleted data can be restored in case they are not overwritten and the significance of
 forensic acquisition and analysis methods.
 
-### Environment Setup
+### 🖥️ Environment Setup
 1. Host System
     - OS: Ubuntu
     - Purpose: Disk Image Conversion
@@ -22,7 +22,7 @@ forensic acquisition and analysis methods.
         - Use Autopsy tool recover files.
 3. Image File Name: disk.dd
 
-### Tools & Technologies Used
+### 🧰 Tools & Technologies Used
 
 | Tools      | Purpose                                                            |
 |------------|--------------------------------------------------------------------|
@@ -33,7 +33,7 @@ forensic acquisition and analysis methods.
 | Ewfacquire | Used to convert RAW image to E01 format.                           |
 | Autopsy    | Used for analyzing disk images and recovering deleted files.       |
 
-### Tools Installation
+### ⚙️ Tools Installation
 
 1. **Window 10 iso** - Download from [Official Page](https://www.microsoft.com/en-us/software-download/windows10ISO)
 2. **VMware** - Download from [Official Page](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
@@ -77,13 +77,13 @@ files. ![15.png](Images/15.png)
 3. To Recover file, Right Click the file → Browse the Path → Enter file name → Save ![18.png](Images/18.png)
 4. Go the Location and file get successfully extracted and saved. ![19.png](Images/19.png)
 
-### Results
+### 🎯 Results
 - Successfully converted VM disk (.vmdk) to RAW (.dd) and E01 formats.
 - Identified and recovered deleted image files from the forensic disk image.
 - Extracted files were viewable and matched expected content, confirming successful
 recovery.
 
-### Conclusion
+### 🏁 Conclusion
 This project demonstrates the complete process of disk forensics, including disk acquisition, conversion, and analysis. Deleted files were successfully recovered using Autopsy.
 
 > Note: Deleted data is not immediately erased but remains recoverable until overwritten.
