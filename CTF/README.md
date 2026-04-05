@@ -72,7 +72,8 @@
 ![13.png](/CTF/Images/13.png)
 2. Edit 404.php ![14.png](/CTF/Images/14.png)
 3. Use **HackerTool** extensions → PHP → Set Attacker IP & Port → Copy Code → Paste in 404.php ![15.png](/CTF/Images/15.png)
-4. Update the 404.php code ![16.png](/CTF/Images/16.png)
+4. Update the 404.php code 
+![16.png](/CTF/Images/16.png)
 
 ##### 2. Start Listener
 1. Run netcat to listen - `nc -nlvp <port>` 
@@ -88,7 +89,8 @@
 2. Two Files found:
     1. key-2-of-3.txt (Permission denied)
     2. password.raw-md5 (MD5 Hash)
-![19.png](/CTF/Images/19.png)
+
+    ![19.png](/CTF/Images/19.png)
 ##### 2. Crack Password
 1. > robot:c3fcd3d76192e4007dfb496cca67e13b
 2. Open Browser → [Crackstation](https://crackstation.net/) → Paste hash → Password Cracked.
@@ -103,13 +105,13 @@
 ![21.png](/CTF/Images/21.png)
 
 #### ⚡ Privilege Escalation (Root)
-1. Find SUID Binaries - `find / -perm -4000 2>/dev/null`
-![22.png](/CTF/Images/22.png)
+1. Find SUID Binaries - `find / -perm -4000 2>/dev/null` ![22.png](/CTF/Images/22.png)
 2. Vulnerable Nmap Found - `/usr/local/bin/nmap` (Vulnerable version: 2.02–5.21)
 ![23.png](/CTF/Images/23.png)
 3. Expoit Nmap - `/usr/local/bin/nmap`
 4. To get interactive shell - `!sh`
-5. To Confirm Root - ``whoami` ![24.png](/CTF/Images/24.png)
+5. To Confirm Root - ``whoami` 
+![24.png](/CTF/Images/24.png)
 
 ##### 🔑 Key 3 Found
 ```
