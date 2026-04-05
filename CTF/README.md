@@ -14,6 +14,9 @@
 5. OpenVPN
 6. Crackstation
 
+### Video Walkthrough
+[![Mr Robot CTF]](https://drive.google.com/file/d/1oX0AB9jkQM1g1OhmAcB3HenauDTdglC2/view?usp=sharing)
+
 ### Procedure
 #### Phase 1: ⚙️ Setup
 1. Download OpenVPN file from [TryHackMe](https://tryhackme.com/access)
@@ -49,8 +52,7 @@
 ![7.png](/CTF/Images/7.png)
 ![8.png](/CTF/Images/8.png)
 ##### 2. License File Discovery
-1. Open Browser → http://<target_ip>/license.
-![9.png](/CTF/Images/9.png)
+1. Open Browser → http://<target_ip>/license. ![9.png](/CTF/Images/9.png)
 2. Scroll Down & Found Base64 string: `ZWxsaW90OkVSMjgtMDY1Mgo=`
 3. Decode using [CyberChef](https://gchq.github.io/CyberChef/)
 4. ``ZWxsaW90OkVSMjgtMDY1Mgo`` → ``elliot:ER28-0652`` (Looks like username & password).
